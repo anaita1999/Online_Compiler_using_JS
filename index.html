@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online Compiler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Online Compiler</h1>
+    <p>This is an online IDE to compile and run your programs.
+        Languages which are currently supported are C, C++, Java and Python.
+        Input(if any) must be provided before running the code.
+    </p>
+    <p>Happy Coding 😀</p>
+    <form id="myform" name="myform" method="post" action="compilecode">
+
+        <h2>Code</h2>
+
+        <textarea rows="13" cols="100" id="code" name="code"></textarea>
+
+        <div class="iobox">
+            <h2>Input</h2>
+            <textarea rows="10" cols="100" id="input" name="input"></textarea>
+        </div>
+
+        <!-- <div class="iobox">
+        <h2>Output</h2>
+        <textarea rows="10" cols="100" id="outputbox" name="outputbox"></textarea>
+        </div> -->
+
+        <p>Language :</p>
+
+        <select name="lang">
+            <option value="C/C++">C/C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </select>
+
+        <div>
+            <input type="submit" value="Compile & Run" name="submit" id="submit" />
+        </div>
+
+        <style>
+            p {
+                font-family: Poppins, sans-serif;
+            }
+
+            h1,
+            h2 {
+                font-family: Inconsolata, monospace;
+            }
+
+            #code {
+                border-color: rgb(0, 75, 160);
+
+                background-color: rgba(41, 219, 56, 0.2);
+                font-family: Inconsolata, monospace;
+                font-size: medium;
+                font-weight: 600;
+                width: 93%;
+            }
+
+            #input {
+                border-color: rgb(211, 0, 0);
+
+                background-color: rgba(209, 145, 26, 0.274);
+                font-family: Inconsolata, monospace;
+                font-size: small;
+                font-weight: 600;
+                width: 85%;
+            }
+
+            /* #outputbox {
+                border-color: rgb(211, 0, 0);
+                
+                background-color: rgba(209, 145, 26, 0.274);
+                font-family: Inconsolata, monospace;
+                font-size: small;
+                font-weight: 600;
+                width: 85%;
+            }
+
+            .iobox {
+                display: inline-block;
+                width: 47%;
+            } */
+
+            select {
+                margin: 2px 10px;
+                padding: 5px 10px;
+                font-family: Poppins, sans-serif;
+                background-color: rgb(16, 110, 74);
+                border-width: 0px;
+                color: white;
+            }
+
+            select:hover {
+                cursor: pointer;
+                background-color: rgba(16, 110, 74, 0.5);
+            }
+
+            span {
+                font-family: Poppins, sans-serif;
+            }
+
+            #submit {
+                margin: 10px 10px;
+                padding: 3px 10px;
+                border-radius: 5px;
+                font-size: medium;
+                font-family: Poppins, sans-serif;
+                border-width: 0px;
+                background-color: rgb(16, 110, 74);
+                color: white;
+            }
+
+            #submit:hover {
+                background-color: rgba(16, 110, 74, 0.5);
+                cursor: pointer;
+            }
+        </style>
+    </form>
+</body>
+
+</html>
